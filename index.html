@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Adoção de Animais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Animais para Adoção</h1>
+
+    <section class="form-section">
+        <h2>Cadastrar Novo Animal</h2>
+        <form id="animalForm">
+            <input type="text" id="nome" placeholder="Nome do animal" required>
+            <input type="number" id="idade" placeholder="Idade" required>
+            <input type="text" id="tipo" placeholder="Tipo (ex: cachorro, gato)" required>
+            <input type="url" id="imagem" placeholder="URL da imagem">
+            <button type="submit">Adicionar</button>
+        </form>
+    </section>
+
+    <section class="lista-section">
+        <h2>Lista de Animais</h2>
+        <div id="listaAnimais" class="lista-animais"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
